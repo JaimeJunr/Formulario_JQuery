@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Formulario</h1>
+        <form>
+            Seu Nome Completo
+            <input type="text" name="" id="name" placeholder="Nome Completo">
+            Seu Email
+            <input type="email" name="" id="email" placeholder="carla@gmail.com">
+            Seu Telefone
+            <input type="tel" name="" id="tel" placeholder="Seu Telefone">
+            Seu CPf
+            <input type="text" name="" id="cpf">
+            Seu Endereço
+            <input type="text" name="" id="ende" placeholder="Seu Endereço">
+            Seu CEP
+            <input type="text" name="" id="cep" placeholder="Seu CEP">
+
+            <button type="submit">Confirmar</button>
+        </form>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery.mask.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#cpf').mask('000.000.000-00', {placeholder: '000.000.000-00'});
+            $('#cep').mask('00000-000', {placeholder: '00000-000'});
+
+        })
+    </script>
+</body>
+</html>
